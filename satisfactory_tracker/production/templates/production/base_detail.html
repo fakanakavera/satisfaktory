@@ -1,0 +1,155 @@
+{% extends 'production/base.html' %}
+{% load production_filter %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1>{{ base.name }}</h1>
+            <div class="btn-group">
+                <a href="{% url 'node-create' base.pk %}" class="btn btn-primary">
+                    <i class="bi bi-plus"></i> Add Resource Node
+                </a>
+                <a href="{% url 'facility-create' base.pk %}" class="btn btn-primary">
+                    <i class="bi bi-plus"></i> Add Facility
+                </a>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                <h3 class="card-title mb-0">Resource Nodes</h3>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Resource</th>
+                                <th>Purity</th>
+                                <th>Miner</th>
+                                <th>Clock Speed</th>
+                                <th>Output Rate</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for node in base.nodes.all %}
+                            <tr>
+                                <td>{{ node.resource_type.name }}</td>
+                                <td>{{ node.purity }}</td>
+                                <td>{{ node.miner_type.name }}</td>
+                                <td>{{ node.clock_speed }}%</td>
+                                <td>{{ node.output_rate|floatformat:2 }}/min</td>
+                                <td>
+                                    <div class="btn-group btn-group-sm">
+                                        <a href="{% url 'node-edit' node.pk %}" class="btn btn-outline-primary">
+                                            <i class="bi bi-pencil"></i> Edit
+                                        </a>
+                                        <a href="{% url 'node-delete' node.pk %}" class="btn btn-outline-danger">
+                                            <i class="bi bi-trash"></i> Delete
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            {% empty %}
+                            <tr>
+                                <td colspan="6" class="text-center">No resource nodes added yet.</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                <h3 class="card-title mb-0">Facilities</h3>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Recipe</th>
+                                <th>Clock Speed</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for facility in base.facilities.all %}
+                            <tr>
+                                <td>{{ facility.facility_type.name }}</td>
+                                <td>{{ facility.recipe.name }}</td>
+                                <td>{{ facility.clock_speed }}%</td>
+                                <td>
+                                    <span class="badge {% if facility.is_active %}bg-success{% else %}bg-danger{% endif %}">
+                                        {{ facility.is_active|yesno:"Active,Inactive" }}
+                                    </span>
+                                </td>
+                                <td>
+                                    <div class="btn-group btn-group-sm">
+                                        <a href="{% url 'facility-edit' facility.pk %}" class="btn btn-outline-primary">
+                                            <i class="bi bi-pencil"></i> Edit
+                                        </a>
+                                        <a href="{% url 'facility-delete' facility.pk %}" class="btn btn-outline-danger">
+                                            <i class="bi bi-trash"></i> Delete
+                                        </a>
+                                        <a href="{% url 'facility-toggle' facility.pk %}" class="btn btn-outline-warning">
+                                            <i class="bi bi-power"></i> Toggle
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            {% empty %}
+                            <tr>
+                                <td colspan="5" class="text-center">No facilities added yet.</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title mb-0">Net Production</h3>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Resource</th>
+                                <th>Production</th>
+                                <th>Consumption</th>
+                                <th>Net</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for resource, net in net_production.items %}
+                            <tr>
+                                <td>{{ resource }}</td>
+                                <td>{{ production|get:resource|default:0|floatformat:2 }}/min</td>
+                                <td>{{ consumption|get:resource|default:0|floatformat:2 }}/min</td>
+                                <td class="{% if net < 0 %}text-danger{% elif net > 0 %}text-success{% endif %}">
+                                    {{ net|floatformat:2 }}/min
+                                </td>
+                            </tr>
+                            {% empty %}
+                            <tr>
+                                <td colspan="4" class="text-center">No production data available.</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

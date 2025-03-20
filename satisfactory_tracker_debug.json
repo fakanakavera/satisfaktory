@@ -1,0 +1,1979 @@
+{
+  "game_data": {
+    "resource_types": [
+      {
+        "name": "Limestone"
+      },
+      {
+        "name": "Copper Ore"
+      },
+      {
+        "name": "coal"
+      },
+      {
+        "name": "SAM"
+      },
+      {
+        "name": "Sulfur"
+      },
+      {
+        "name": "Iron Ore"
+      },
+      {
+        "name": "Iron Ingot"
+      },
+      {
+        "name": "Iron Rod"
+      },
+      {
+        "name": "Caterium Ore"
+      },
+      {
+        "name": "Copper Ingot"
+      },
+      {
+        "name": "Caterium Ingot"
+      },
+      {
+        "name": "Iron Plate"
+      },
+      {
+        "name": "Screw"
+      },
+      {
+        "name": "Copper Sheet"
+      },
+      {
+        "name": "Steel Ingot"
+      },
+      {
+        "name": "Steel Beam"
+      },
+      {
+        "name": "Steel Pipe"
+      },
+      {
+        "name": "Wire"
+      },
+      {
+        "name": "Cable"
+      },
+      {
+        "name": "Quickwire"
+      },
+      {
+        "name": "Reanimated SAM"
+      },
+      {
+        "name": "Concrete"
+      },
+      {
+        "name": "Raw Quartz"
+      },
+      {
+        "name": "Quartz Crystal"
+      },
+      {
+        "name": "Silica"
+      },
+      {
+        "name": "Empty Canister"
+      },
+      {
+        "name": "Plastic"
+      },
+      {
+        "name": "Reinforced Iron Plate"
+      },
+      {
+        "name": "Modular Frame"
+      },
+      {
+        "name": "Encased Industrial Beam"
+      },
+      {
+        "name": "Circuit Board"
+      },
+      {
+        "name": "AI Limiter"
+      },
+      {
+        "name": "Rotor"
+      },
+      {
+        "name": "Stator"
+      },
+      {
+        "name": "Motor"
+      },
+      {
+        "name": "Heavy Modular Frame"
+      },
+      {
+        "name": "High-Speed Connector"
+      },
+      {
+        "name": "SAM Fluctuator"
+      },
+      {
+        "name": "Computer"
+      }
+    ],
+    "miner_types": [
+      {
+        "name": "Miner MK1",
+        "base_rate": 60.0
+      },
+      {
+        "name": "Miner MK2",
+        "base_rate": 120.0
+      }
+    ],
+    "building_types": [
+      {
+        "name": "Constructor"
+      },
+      {
+        "name": "Smelter"
+      },
+      {
+        "name": "Foundry"
+      },
+      {
+        "name": "Assembler"
+      },
+      {
+        "name": "Manufacturer"
+      }
+    ],
+    "recipes": [
+      {
+        "name": "Iron Ingot",
+        "building_type": "Smelter",
+        "inputs": [
+          [
+            "Iron Ore",
+            30.0
+          ]
+        ],
+        "outputs": [
+          [
+            "Iron Ingot",
+            30.0
+          ]
+        ]
+      },
+      {
+        "name": "Iron Rod",
+        "building_type": "Constructor",
+        "inputs": [
+          [
+            "Iron Ingot",
+            15.0
+          ]
+        ],
+        "outputs": [
+          [
+            "Iron Rod",
+            15.0
+          ]
+        ]
+      },
+      {
+        "name": "Copper Ingot",
+        "building_type": "Smelter",
+        "inputs": [
+          [
+            "Copper Ore",
+            30.0
+          ]
+        ],
+        "outputs": [
+          [
+            "Copper Ingot",
+            30.0
+          ]
+        ]
+      },
+      {
+        "name": "Caterium Ingot",
+        "building_type": "Smelter",
+        "inputs": [
+          [
+            "Caterium Ore",
+            45.0
+          ]
+        ],
+        "outputs": [
+          [
+            "Caterium Ingot",
+            15.0
+          ]
+        ]
+      },
+      {
+        "name": "Iron Plate",
+        "building_type": "Constructor",
+        "inputs": [
+          [
+            "Iron Ingot",
+            30.0
+          ]
+        ],
+        "outputs": [
+          [
+            "Iron Plate",
+            20.0
+          ]
+        ]
+      },
+      {
+        "name": "Screw",
+        "building_type": "Constructor",
+        "inputs": [
+          [
+            "Iron Rod",
+            10.0
+          ]
+        ],
+        "outputs": [
+          [
+            "Screw",
+            40.0
+          ]
+        ]
+      },
+      {
+        "name": "Copper Sheet",
+        "building_type": "Constructor",
+        "inputs": [
+          [
+            "Copper Ingot",
+            20.0
+          ]
+        ],
+        "outputs": [
+          [
+            "Copper Sheet",
+            10.0
+          ]
+        ]
+      },
+      {
+        "name": "Steel Ingot",
+        "building_type": "Foundry",
+        "inputs": [
+          [
+            "Iron Ore",
+            45.0
+          ],
+          [
+            "coal",
+            45.0
+          ]
+        ],
+        "outputs": [
+          [
+            "Steel Ingot",
+            45.0
+          ]
+        ]
+      },
+      {
+        "name": "Steel Beam",
+        "building_type": "Constructor",
+        "inputs": [
+          [
+            "Steel Ingot",
+            60.0
+          ]
+        ],
+        "outputs": [
+          [
+            "Steel Beam",
+            15.0
+          ]
+        ]
+      },
+      {
+        "name": "Steel Pipe",
+        "building_type": "Constructor",
+        "inputs": [
+          [
+            "Steel Ingot",
+            30.0
+          ]
+        ],
+        "outputs": [
+          [
+            "Steel Pipe",
+            20.0
+          ]
+        ]
+      },
+      {
+        "name": "Wire",
+        "building_type": "Constructor",
+        "inputs": [
+          [
+            "Copper Ingot",
+            15.0
+          ]
+        ],
+        "outputs": [
+          [
+            "Wire",
+            30.0
+          ]
+        ]
+      },
+      {
+        "name": "Cable",
+        "building_type": "Constructor",
+        "inputs": [
+          [
+            "Wire",
+            60.0
+          ]
+        ],
+        "outputs": [
+          [
+            "Cable",
+            30.0
+          ]
+        ]
+      },
+      {
+        "name": "Quickwire",
+        "building_type": "Constructor",
+        "inputs": [
+          [
+            "Caterium Ingot",
+            12.0
+          ]
+        ],
+        "outputs": [
+          [
+            "Quickwire",
+            60.0
+          ]
+        ]
+      },
+      {
+        "name": "Reanimated SAM",
+        "building_type": "Constructor",
+        "inputs": [
+          [
+            "SAM",
+            120.0
+          ]
+        ],
+        "outputs": [
+          [
+            "Reanimated SAM",
+            30.0
+          ]
+        ]
+      },
+      {
+        "name": "Concrete",
+        "building_type": "Constructor",
+        "inputs": [
+          [
+            "Limestone",
+            45.0
+          ]
+        ],
+        "outputs": [
+          [
+            "Concrete",
+            15.0
+          ]
+        ]
+      },
+      {
+        "name": "Quartz Crystal",
+        "building_type": "Constructor",
+        "inputs": [
+          [
+            "Raw Quartz",
+            37.5
+          ]
+        ],
+        "outputs": [
+          [
+            "Quartz Crystal",
+            22.5
+          ]
+        ]
+      },
+      {
+        "name": "Silica",
+        "building_type": "Constructor",
+        "inputs": [
+          [
+            "Raw Quartz",
+            22.5
+          ]
+        ],
+        "outputs": [
+          [
+            "Silica",
+            37.5
+          ]
+        ]
+      },
+      {
+        "name": "Empty Canister",
+        "building_type": "Constructor",
+        "inputs": [
+          [
+            "Plastic",
+            30.0
+          ]
+        ],
+        "outputs": [
+          [
+            "Empty Canister",
+            60.0
+          ]
+        ]
+      },
+      {
+        "name": "Reinforced Iron Plate",
+        "building_type": "Assembler",
+        "inputs": [
+          [
+            "Iron Plate",
+            30.0
+          ],
+          [
+            "Screw",
+            60.0
+          ]
+        ],
+        "outputs": [
+          [
+            "Reinforced Iron Plate",
+            5.0
+          ]
+        ]
+      },
+      {
+        "name": "Modular Frame",
+        "building_type": "Assembler",
+        "inputs": [
+          [
+            "Reinforced Iron Plate",
+            3.0
+          ],
+          [
+            "Iron Rod",
+            12.0
+          ]
+        ],
+        "outputs": [
+          [
+            "Modular Frame",
+            2.0
+          ]
+        ]
+      },
+      {
+        "name": "Encased Industrial Beam",
+        "building_type": "Assembler",
+        "inputs": [
+          [
+            "Steel Beam",
+            18.0
+          ],
+          [
+            "Concrete",
+            36.0
+          ]
+        ],
+        "outputs": [
+          [
+            "Encased Industrial Beam",
+            6.0
+          ]
+        ]
+      },
+      {
+        "name": "Circuit Board",
+        "building_type": "Assembler",
+        "inputs": [
+          [
+            "Copper Sheet",
+            15.0
+          ],
+          [
+            "Plastic",
+            30.0
+          ]
+        ],
+        "outputs": [
+          [
+            "Circuit Board",
+            7.5
+          ]
+        ]
+      },
+      {
+        "name": "AI Limiter",
+        "building_type": "Assembler",
+        "inputs": [
+          [
+            "Copper Sheet",
+            25.0
+          ],
+          [
+            "Quickwire",
+            100.0
+          ]
+        ],
+        "outputs": [
+          [
+            "AI Limiter",
+            5.0
+          ]
+        ]
+      },
+      {
+        "name": "Rotor",
+        "building_type": "Assembler",
+        "inputs": [
+          [
+            "Iron Rod",
+            20.0
+          ],
+          [
+            "Screw",
+            100.0
+          ]
+        ],
+        "outputs": [
+          [
+            "Rotor",
+            4.0
+          ]
+        ]
+      },
+      {
+        "name": "Steel Rotor",
+        "building_type": "Assembler",
+        "inputs": [
+          [
+            "Steel Pipe",
+            10.0
+          ],
+          [
+            "Wire",
+            30.0
+          ]
+        ],
+        "outputs": [
+          [
+            "Rotor",
+            5.0
+          ]
+        ]
+      },
+      {
+        "name": "Stator",
+        "building_type": "Assembler",
+        "inputs": [
+          [
+            "Steel Pipe",
+            15.0
+          ],
+          [
+            "Wire",
+            40.0
+          ]
+        ],
+        "outputs": [
+          [
+            "Stator",
+            5.0
+          ]
+        ]
+      },
+      {
+        "name": "Motor",
+        "building_type": "Assembler",
+        "inputs": [
+          [
+            "Rotor",
+            10.0
+          ],
+          [
+            "Stator",
+            10.0
+          ]
+        ],
+        "outputs": [
+          [
+            "Motor",
+            5.0
+          ]
+        ]
+      },
+      {
+        "name": "Heavy Modular Frame",
+        "building_type": "Manufacturer",
+        "inputs": [
+          [
+            "Modular Frame",
+            10.0
+          ],
+          [
+            "Steel Pipe",
+            40.0
+          ],
+          [
+            "Encased Industrial Beam",
+            10.0
+          ],
+          [
+            "Screw",
+            240.0
+          ]
+        ],
+        "outputs": [
+          [
+            "Heavy Modular Frame",
+            2.0
+          ]
+        ]
+      },
+      {
+        "name": "High-Speed Connector",
+        "building_type": "Manufacturer",
+        "inputs": [
+          [
+            "Quickwire",
+            210.0
+          ],
+          [
+            "Cable",
+            37.5
+          ],
+          [
+            "Circuit Board",
+            3.75
+          ]
+        ],
+        "outputs": [
+          [
+            "High-Speed Connector",
+            3.75
+          ]
+        ]
+      },
+      {
+        "name": "SAM Fluctuator",
+        "building_type": "Manufacturer",
+        "inputs": [
+          [
+            "Reanimated SAM",
+            60.0
+          ],
+          [
+            "Wire",
+            50.0
+          ],
+          [
+            "Steel Pipe",
+            30.0
+          ]
+        ],
+        "outputs": [
+          [
+            "SAM Fluctuator",
+            10.0
+          ]
+        ]
+      },
+      {
+        "name": "Computer",
+        "building_type": "Manufacturer",
+        "inputs": [
+          [
+            "Circuit Board",
+            10.0
+          ],
+          [
+            "Cable",
+            20.0
+          ],
+          [
+            "Plastic",
+            40.0
+          ]
+        ],
+        "outputs": [
+          [
+            "Computer",
+            2.5
+          ]
+        ]
+      }
+    ],
+    "next_base_id": 2,
+    "next_node_id": 17,
+    "next_facility_id": 70
+  },
+  "production_graph": {
+    "bases": {
+      "1": {
+        "base_id": 1,
+        "name": "Desert 001",
+        "nodes": {
+          "2": {
+            "node_id": 2,
+            "resource_type": "Iron Ore",
+            "purity": "Impure",
+            "miner_type": "Miner MK2",
+            "miner_rate": 120.0,
+            "output_rate": 60.0
+          },
+          "3": {
+            "node_id": 3,
+            "resource_type": "Iron Ore",
+            "purity": "Impure",
+            "miner_type": "Miner MK2",
+            "miner_rate": 120.0,
+            "output_rate": 60.0
+          },
+          "5": {
+            "node_id": 5,
+            "resource_type": "Copper Ore",
+            "purity": "Normal",
+            "miner_type": "Miner MK2",
+            "miner_rate": 60.0,
+            "output_rate": 60.0
+          },
+          "6": {
+            "node_id": 6,
+            "resource_type": "Iron Ore",
+            "purity": "Impure",
+            "miner_type": "Miner MK2",
+            "miner_rate": 120.0,
+            "output_rate": 60.0
+          },
+          "7": {
+            "node_id": 7,
+            "resource_type": "Iron Ore",
+            "purity": "Pure",
+            "miner_type": "Miner MK2",
+            "miner_rate": 120.0,
+            "output_rate": 240.0
+          },
+          "8": {
+            "node_id": 8,
+            "resource_type": "coal",
+            "purity": "Normal",
+            "miner_type": "Miner MK2",
+            "miner_rate": 120.0,
+            "output_rate": 120.0
+          },
+          "9": {
+            "node_id": 9,
+            "resource_type": "coal",
+            "purity": "Normal",
+            "miner_type": "Miner MK2",
+            "miner_rate": 120.0,
+            "output_rate": 120.0
+          },
+          "10": {
+            "node_id": 10,
+            "resource_type": "SAM",
+            "purity": "Impure",
+            "miner_type": "Miner MK1",
+            "miner_rate": 60.0,
+            "output_rate": 30.0
+          },
+          "11": {
+            "node_id": 11,
+            "resource_type": "Sulfur",
+            "purity": "Pure",
+            "miner_type": "Miner MK2",
+            "miner_rate": 120.0,
+            "output_rate": 240.0
+          },
+          "13": {
+            "node_id": 13,
+            "resource_type": "Limestone",
+            "purity": "Normal",
+            "miner_type": "Miner MK2",
+            "miner_rate": 120.0,
+            "output_rate": 120.0
+          },
+          "14": {
+            "node_id": 14,
+            "resource_type": "Caterium Ore",
+            "purity": "Normal",
+            "miner_type": "Miner MK2",
+            "miner_rate": 120.0,
+            "output_rate": 120.0
+          },
+          "15": {
+            "node_id": 15,
+            "resource_type": "Limestone",
+            "purity": "Impure",
+            "miner_type": "Miner MK2",
+            "miner_rate": 120.0,
+            "output_rate": 60.0
+          },
+          "16": {
+            "node_id": 16,
+            "resource_type": "Limestone",
+            "purity": "Impure",
+            "miner_type": "Miner MK2",
+            "miner_rate": 120.0,
+            "output_rate": 150.0
+          }
+        },
+        "facilities": {
+          "9": {
+            "facility_id": 9,
+            "facility_type": "Smelter",
+            "recipe": "Iron Ingot",
+            "input_items": [
+              [
+                "Iron Ore",
+                30.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Iron Ingot",
+                30.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "10": {
+            "facility_id": 10,
+            "facility_type": "Smelter",
+            "recipe": "Iron Ingot",
+            "input_items": [
+              [
+                "Iron Ore",
+                30.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Iron Ingot",
+                30.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "11": {
+            "facility_id": 11,
+            "facility_type": "Smelter",
+            "recipe": "Iron Ingot",
+            "input_items": [
+              [
+                "Iron Ore",
+                30.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Iron Ingot",
+                30.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "12": {
+            "facility_id": 12,
+            "facility_type": "Smelter",
+            "recipe": "Iron Ingot",
+            "input_items": [
+              [
+                "Iron Ore",
+                30.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Iron Ingot",
+                30.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "13": {
+            "facility_id": 13,
+            "facility_type": "Smelter",
+            "recipe": "Copper Ingot",
+            "input_items": [
+              [
+                "Copper Ore",
+                30.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Copper Ingot",
+                30.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "14": {
+            "facility_id": 14,
+            "facility_type": "Smelter",
+            "recipe": "Copper Ingot",
+            "input_items": [
+              [
+                "Copper Ore",
+                30.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Copper Ingot",
+                30.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "15": {
+            "facility_id": 15,
+            "facility_type": "Smelter",
+            "recipe": "Copper Ingot",
+            "input_items": [
+              [
+                "Copper Ore",
+                30.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Copper Ingot",
+                30.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "16": {
+            "facility_id": 16,
+            "facility_type": "Smelter",
+            "recipe": "Copper Ingot",
+            "input_items": [
+              [
+                "Copper Ore",
+                30.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Copper Ingot",
+                30.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "17": {
+            "facility_id": 17,
+            "facility_type": "Foundry",
+            "recipe": "Steel Ingot",
+            "input_items": [
+              [
+                "Iron Ore",
+                45.0
+              ],
+              [
+                "coal",
+                45.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Steel Ingot",
+                45.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "18": {
+            "facility_id": 18,
+            "facility_type": "Foundry",
+            "recipe": "Steel Ingot",
+            "input_items": [
+              [
+                "Iron Ore",
+                45.0
+              ],
+              [
+                "coal",
+                45.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Steel Ingot",
+                45.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "19": {
+            "facility_id": 19,
+            "facility_type": "Foundry",
+            "recipe": "Steel Ingot",
+            "input_items": [
+              [
+                "Iron Ore",
+                45.0
+              ],
+              [
+                "coal",
+                45.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Steel Ingot",
+                45.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "20": {
+            "facility_id": 20,
+            "facility_type": "Constructor",
+            "recipe": "Concrete",
+            "input_items": [
+              [
+                "Limestone",
+                45.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Concrete",
+                15.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "21": {
+            "facility_id": 21,
+            "facility_type": "Constructor",
+            "recipe": "Concrete",
+            "input_items": [
+              [
+                "Limestone",
+                45.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Concrete",
+                15.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "22": {
+            "facility_id": 22,
+            "facility_type": "Constructor",
+            "recipe": "Concrete",
+            "input_items": [
+              [
+                "Limestone",
+                45.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Concrete",
+                15.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "23": {
+            "facility_id": 23,
+            "facility_type": "Constructor",
+            "recipe": "Concrete",
+            "input_items": [
+              [
+                "Limestone",
+                45.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Concrete",
+                15.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "24": {
+            "facility_id": 24,
+            "facility_type": "Constructor",
+            "recipe": "Concrete",
+            "input_items": [
+              [
+                "Limestone",
+                45.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Concrete",
+                15.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "25": {
+            "facility_id": 25,
+            "facility_type": "Constructor",
+            "recipe": "Concrete",
+            "input_items": [
+              [
+                "Limestone",
+                45.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Concrete",
+                15.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "26": {
+            "facility_id": 26,
+            "facility_type": "Constructor",
+            "recipe": "Wire",
+            "input_items": [
+              [
+                "Copper Ingot",
+                15.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Wire",
+                30.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "27": {
+            "facility_id": 27,
+            "facility_type": "Constructor",
+            "recipe": "Wire",
+            "input_items": [
+              [
+                "Copper Ingot",
+                15.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Wire",
+                30.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "28": {
+            "facility_id": 28,
+            "facility_type": "Constructor",
+            "recipe": "Wire",
+            "input_items": [
+              [
+                "Copper Ingot",
+                15.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Wire",
+                30.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "29": {
+            "facility_id": 29,
+            "facility_type": "Constructor",
+            "recipe": "Copper Sheet",
+            "input_items": [
+              [
+                "Copper Ingot",
+                20.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Copper Sheet",
+                10.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "30": {
+            "facility_id": 30,
+            "facility_type": "Constructor",
+            "recipe": "Copper Sheet",
+            "input_items": [
+              [
+                "Copper Ingot",
+                20.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Copper Sheet",
+                10.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "31": {
+            "facility_id": 31,
+            "facility_type": "Constructor",
+            "recipe": "Copper Sheet",
+            "input_items": [
+              [
+                "Copper Ingot",
+                20.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Copper Sheet",
+                10.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "32": {
+            "facility_id": 32,
+            "facility_type": "Constructor",
+            "recipe": "Iron Plate",
+            "input_items": [
+              [
+                "Iron Ingot",
+                30.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Iron Plate",
+                20.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "33": {
+            "facility_id": 33,
+            "facility_type": "Constructor",
+            "recipe": "Iron Plate",
+            "input_items": [
+              [
+                "Iron Ingot",
+                30.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Iron Plate",
+                20.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "34": {
+            "facility_id": 34,
+            "facility_type": "Constructor",
+            "recipe": "Iron Rod",
+            "input_items": [
+              [
+                "Iron Ingot",
+                15.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Iron Rod",
+                15.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "35": {
+            "facility_id": 35,
+            "facility_type": "Constructor",
+            "recipe": "Iron Rod",
+            "input_items": [
+              [
+                "Iron Ingot",
+                15.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Iron Rod",
+                15.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "36": {
+            "facility_id": 36,
+            "facility_type": "Constructor",
+            "recipe": "Iron Rod",
+            "input_items": [
+              [
+                "Iron Ingot",
+                15.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Iron Rod",
+                15.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "37": {
+            "facility_id": 37,
+            "facility_type": "Constructor",
+            "recipe": "Wire",
+            "input_items": [
+              [
+                "Copper Ingot",
+                15.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Wire",
+                30.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "38": {
+            "facility_id": 38,
+            "facility_type": "Constructor",
+            "recipe": "Wire",
+            "input_items": [
+              [
+                "Copper Ingot",
+                15.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Wire",
+                30.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "39": {
+            "facility_id": 39,
+            "facility_type": "Constructor",
+            "recipe": "Wire",
+            "input_items": [
+              [
+                "Copper Ingot",
+                15.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Wire",
+                30.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "40": {
+            "facility_id": 40,
+            "facility_type": "Constructor",
+            "recipe": "Steel Beam",
+            "input_items": [
+              [
+                "Steel Ingot",
+                60.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Steel Beam",
+                15.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "41": {
+            "facility_id": 41,
+            "facility_type": "Constructor",
+            "recipe": "Steel Beam",
+            "input_items": [
+              [
+                "Steel Ingot",
+                60.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Steel Beam",
+                15.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "42": {
+            "facility_id": 42,
+            "facility_type": "Constructor",
+            "recipe": "Steel Beam",
+            "input_items": [
+              [
+                "Steel Ingot",
+                60.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Steel Beam",
+                15.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "43": {
+            "facility_id": 43,
+            "facility_type": "Foundry",
+            "recipe": "Steel Ingot",
+            "input_items": [
+              [
+                "Iron Ore",
+                45.0
+              ],
+              [
+                "coal",
+                45.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Steel Ingot",
+                45.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "44": {
+            "facility_id": 44,
+            "facility_type": "Foundry",
+            "recipe": "Steel Ingot",
+            "input_items": [
+              [
+                "Iron Ore",
+                45.0
+              ],
+              [
+                "coal",
+                45.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Steel Ingot",
+                45.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "45": {
+            "facility_id": 45,
+            "facility_type": "Foundry",
+            "recipe": "Steel Ingot",
+            "input_items": [
+              [
+                "Iron Ore",
+                45.0
+              ],
+              [
+                "coal",
+                45.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Steel Ingot",
+                45.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "46": {
+            "facility_id": 46,
+            "facility_type": "Constructor",
+            "recipe": "Steel Pipe",
+            "input_items": [
+              [
+                "Steel Ingot",
+                30.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Steel Pipe",
+                20.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "47": {
+            "facility_id": 47,
+            "facility_type": "Constructor",
+            "recipe": "Steel Pipe",
+            "input_items": [
+              [
+                "Steel Ingot",
+                30.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Steel Pipe",
+                20.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "48": {
+            "facility_id": 48,
+            "facility_type": "Constructor",
+            "recipe": "Steel Pipe",
+            "input_items": [
+              [
+                "Steel Ingot",
+                30.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Steel Pipe",
+                20.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "49": {
+            "facility_id": 49,
+            "facility_type": "Constructor",
+            "recipe": "Steel Beam",
+            "input_items": [
+              [
+                "Steel Ingot",
+                60.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Steel Beam",
+                15.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "50": {
+            "facility_id": 50,
+            "facility_type": "Constructor",
+            "recipe": "Steel Beam",
+            "input_items": [
+              [
+                "Steel Ingot",
+                60.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Steel Beam",
+                15.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "51": {
+            "facility_id": 51,
+            "facility_type": "Constructor",
+            "recipe": "Steel Beam",
+            "input_items": [
+              [
+                "Steel Ingot",
+                60.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Steel Beam",
+                15.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "52": {
+            "facility_id": 52,
+            "facility_type": "Assembler",
+            "recipe": "Encased Industrial Beam",
+            "input_items": [
+              [
+                "Steel Beam",
+                18.0
+              ],
+              [
+                "Concrete",
+                36.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Encased Industrial Beam",
+                6.0
+              ]
+            ],
+            "clock_speed": 83.3333
+          },
+          "53": {
+            "facility_id": 53,
+            "facility_type": "Assembler",
+            "recipe": "Encased Industrial Beam",
+            "input_items": [
+              [
+                "Steel Beam",
+                18.0
+              ],
+              [
+                "Concrete",
+                36.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Encased Industrial Beam",
+                6.0
+              ]
+            ],
+            "clock_speed": 83.333333
+          },
+          "54": {
+            "facility_id": 54,
+            "facility_type": "Assembler",
+            "recipe": "Encased Industrial Beam",
+            "input_items": [
+              [
+                "Steel Beam",
+                18.0
+              ],
+              [
+                "Concrete",
+                36.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Encased Industrial Beam",
+                6.0
+              ]
+            ],
+            "clock_speed": 83.3333333
+          },
+          "55": {
+            "facility_id": 55,
+            "facility_type": "Smelter",
+            "recipe": "Caterium Ingot",
+            "input_items": [
+              [
+                "Caterium Ore",
+                45.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Caterium Ingot",
+                15.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "56": {
+            "facility_id": 56,
+            "facility_type": "Smelter",
+            "recipe": "Caterium Ingot",
+            "input_items": [
+              [
+                "Caterium Ore",
+                45.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Caterium Ingot",
+                15.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "57": {
+            "facility_id": 57,
+            "facility_type": "Smelter",
+            "recipe": "Caterium Ingot",
+            "input_items": [
+              [
+                "Caterium Ore",
+                45.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Caterium Ingot",
+                15.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "58": {
+            "facility_id": 58,
+            "facility_type": "Smelter",
+            "recipe": "Caterium Ingot",
+            "input_items": [
+              [
+                "Caterium Ore",
+                45.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Caterium Ingot",
+                15.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "59": {
+            "facility_id": 59,
+            "facility_type": "Constructor",
+            "recipe": "Quickwire",
+            "input_items": [
+              [
+                "Caterium Ingot",
+                12.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Quickwire",
+                60.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "60": {
+            "facility_id": 60,
+            "facility_type": "Constructor",
+            "recipe": "Quickwire",
+            "input_items": [
+              [
+                "Caterium Ingot",
+                12.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Quickwire",
+                60.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "61": {
+            "facility_id": 61,
+            "facility_type": "Constructor",
+            "recipe": "Quickwire",
+            "input_items": [
+              [
+                "Caterium Ingot",
+                12.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Quickwire",
+                60.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "62": {
+            "facility_id": 62,
+            "facility_type": "Constructor",
+            "recipe": "Screw",
+            "input_items": [
+              [
+                "Iron Rod",
+                10.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Screw",
+                40.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "63": {
+            "facility_id": 63,
+            "facility_type": "Constructor",
+            "recipe": "Screw",
+            "input_items": [
+              [
+                "Iron Rod",
+                10.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Screw",
+                40.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "64": {
+            "facility_id": 64,
+            "facility_type": "Constructor",
+            "recipe": "Screw",
+            "input_items": [
+              [
+                "Iron Rod",
+                10.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Screw",
+                40.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "65": {
+            "facility_id": 65,
+            "facility_type": "Constructor",
+            "recipe": "Screw",
+            "input_items": [
+              [
+                "Iron Rod",
+                10.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Screw",
+                40.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "66": {
+            "facility_id": 66,
+            "facility_type": "Constructor",
+            "recipe": "Screw",
+            "input_items": [
+              [
+                "Iron Rod",
+                10.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Screw",
+                40.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "67": {
+            "facility_id": 67,
+            "facility_type": "Constructor",
+            "recipe": "Screw",
+            "input_items": [
+              [
+                "Iron Rod",
+                10.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Screw",
+                40.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "68": {
+            "facility_id": 68,
+            "facility_type": "Constructor",
+            "recipe": "Cable",
+            "input_items": [
+              [
+                "Wire",
+                60.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Cable",
+                30.0
+              ]
+            ],
+            "clock_speed": 100.0
+          },
+          "69": {
+            "facility_id": 69,
+            "facility_type": "Constructor",
+            "recipe": "Cable",
+            "input_items": [
+              [
+                "Wire",
+                60.0
+              ]
+            ],
+            "output_items": [
+              [
+                "Cable",
+                30.0
+              ]
+            ],
+            "clock_speed": 100.0
+          }
+        },
+        "storage": {}
+      }
+    },
+    "unlinked_nodes": {}
+  }
+}
